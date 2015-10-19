@@ -1,0 +1,47 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:background="#000000"
+    tools:context=".FullscreenActivity"
+    style="@style/Base.V7.Theme.AppCompat"
+    android:theme="@android:style/Theme">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+
+    <AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="340dp"
+        android:layout_gravity="center_horizontal|bottom">
+
+        <ImageButton
+         android:layout_width="50dp"
+         android:layout_height="50dp"
+         android:id="@+id/shuffleButton"
+         android:layout_x="294dp"
+         android:layout_y="241dp"
+         android:layout_margin="10dp"
+         android:clickable="true" />
+    </AbsoluteLayout>
+
+    <TextView
+        android:layout_width="151dp"
+        android:layout_height="36dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/Timeid"
+        android:layout_gravity="left|top"
+        android:textStyle="bold"
+        android:textSize="30sp" />
+
+    <TextView
+        android:layout_width="151dp"
+        android:layout_height="36dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Count"
+        android:id="@+id/TextViewCount"
+        android:layout_gravity="right|top" />
+
+</FrameLayout>
